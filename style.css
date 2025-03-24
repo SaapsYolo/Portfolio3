@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --gradientColor: ;
+    --myRed: #FF5E5E;
+    --myOrange: #F28202;
+    
+}
+body{
+    min-height: 100vh;
+    font-family: "Inter", sans-serif ;
+}
+
+nav{
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /* background-color: rgb(255, 255, 255, .5); */
+    /* filter: blur(10px); */
+    /* -webkit-backdrop-filter: blur(10px); */
+    /* -webkit-filter: blur(20px);
+    -webkit-background-clip: text; */
+    backdrop-filter: blur(25px);
+    box-shadow: 0  0 30px rgba(227, 228, 237, .3);
+    border: 2px solid rgba(255, 255, 255, .1);
+    /* -webkit-text-fill-color: transparent; */
+}
+.blurNav{
+    /* background-color: rgb(255, 255, 255, .8);
+    /* background-color: rgb(242, 130, 2, .5); */
+    /* filter: blur(10px);
+    width: 100%;
+    height: 60px; */
+    /* border: rgb(0, 0, 0, .5) 2px solid; */
+    /* position: sticky;
+    top: 0;
+    z-index: 0; */ 
+
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+nav ul a{
+    color: black;
+    text-decoration: none;
+}
+nav ul a:hover{
+    transition: .2s ease-in-out ;
+    color: var(--myRed);
+}
+
+.gradientBorder{
+    background: linear-gradient(to right, #F28202, #FF5E5E);
+    padding: 1px;
+    display: inline-block;
+}
+.contactMeBtn:hover{
+    background-color: var(--myOrange);
+    color: #fff;
+    transition: .3s ease-in-out;
+}
+nav .contactMeBtn{
+    border: none ;
+    background: #fff ;
+    padding: 12px 20px;
+}
+nav .mobileResponsive, .gradientBorder2{
+    display: none;
+
+}
+.orangeCircle{
+    height: 10rem;
+    width: 10rem;
+    background-color: rgb(255, 94, 94, .5);
+    border-radius: 100%;
+    position: absolute;
+    z-index: -1;
+    margin-left: 16rem;
+    margin-top: 5rem;
+    filter: blur(80px);
+}
+.indigoCircle{
+    height: 23rem;
+    width: 23rem;
+    border-radius: 100%;
+    background-color: rgb(75, 0, 130, .5);
+    position: absolute;
+    z-index: -1;
+    margin-left: 48rem;
+    margin-top: 6rem;
+    filter: blur(40px);
+}
+.circle3{
+    height: 23rem;
+    width: 23rem;
+    border-radius: 100%;
+    background-color: rgb(75, 0, 130, .18);
+    position: absolute;
+    z-index: -1;
+    margin-left: 8rem;
+    margin-top: -8rem;
+    filter: blur(100px);
+}
+.circle4{
+    height: 23rem;
+    width: 23rem;
+    background-color: rgb(255, 94, 94, .25);
+    border-radius: 100%;
+    position: absolute;
+    z-index: -1;
+    margin-left: 8rem;
+    margin-top: -8rem;
+    filter: blur(100px);
+}
+.heroSection{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 46px;
+    gap: 30px;
+}
+.heroSection .heroText{
+    max-width: 500px;
+}
+h3{
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+h2{
+    font-weight: 500;
+    font-size: 48px;
+    background: linear-gradient(to right, #F28202, #FF5E5E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h2 span{
+    font-weight: 800;
+}
+i{
+    font-weight: 300;
+    font: 20px;
+}
+.heroSection .iconsDiv ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 10px;
+}
+.heroSection .iconsDiv ul a svg{
+    
+    width: 40px;
+    height: 40px;
+}
+.heroSection .twoButtonsHero{
+    display: flex;
+    gap: 15px;
+    margin-top: 44px;
+}
+.hireMeBtn{
+    background-color: #000;
+    color: #fff;
+    padding: 15px 17px;
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+}
+.hireMeBtn:hover{
+	color: #F28202;
+	transition: .3s ease-in-out;
+}
+.downloadCvBtn{
+    border: none ;
+    background: #fff ;
+    padding: 17px 17px;
+    cursor: pointer;
+
+}
+.downloadCvBtn:hover{
+	color: #F28202;
+	transition: .3s ease-in-out;
+}
+.heroSection .heroImage img{
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 100%;
+    /* top: -10; */
+    right: 0;
+}
+.aboutSection{
+    /* background-color: rgb(0, 0, 58); */
+    /* color: #fff; */
+    /* margin-top: 5rem; */
+    /* padding-top: 50px; */
+    padding: 5rem 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutSection .aboutText{
+    max-width: 970px;
+}
+
+.MyWorkSeeMore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.myWorkSection{
+    padding: 5rem 20px 0;
+    /* margin-top: 10rem; */
+    /* background-color: #00000023; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+.myWorkSection .bottomSectionWork{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 20px;
+    max-width: 80%;
+    /* background-color: bisque; */
+}
+.myWorkSection .bottomSectionWork .leftSectionWork{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.myWorkSection .bottomSectionWork .leftSectionWork .uiUxDesign a{
+    font-weight: 800;
+    color: var(--myRed);
+}
+.myWorkSection .bottomSectionWork .rightSectionWork div {
+    /* background-color: #F28202; */
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 0fr);
+} 
+.myWorkSection .rightSectionWork .designs div:hover{
+    box-shadow: 0 0 20px rgba(0,0,0, 0.1);
+    border-radius: 10px;
+    border: 1.5px solid #fff;
+    transform: scale(1.05);
+    transition: .3s ease-in-out;
+    /* padding: 10px; */
+    backdrop-filter: blur(50px);
+    /* filter: brightness(0.8); */
+    /* filter: contrast(1.5); */
+    filter: grayscale(0%);
+
+}
+.myWorkSection .rightSectionWork .designs:hover div{
+    filter: grayscale(100%);
+}
+.myWorkSection .rightSectionWork .designs:hover div:hover{
+    filter: grayscale(0%);
+}
+.seeMoreBtn{
+    display: none;
+}
+#SoftwareDevContent{
+    display: none;
+}
+
+/* .myWorkSection .rightSectionWork .designs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+} */
+
+.moreAbout{
+    /* margin-top: 10rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    /* background-color: #00000023; */
+}
+/* .EducationButton:focus{
+    color: #FF5E5E;
+
+  
+}
+.SkillsButton:focus{
+    color: #FF5E5E;
+} */
+
+
+.moreAbout ul, li, a{
+    display: flex;
+    align-content: space-between;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    gap: 2rem;
+    text-align: center;
+}
+.moreAboutContent{
+    /* width: 100%; */
+    max-width: 100vw;
+    padding:  20px;
+    /* background-color: #00000038; */
+}
+
+.educationSection{
+    margin-top: 3rem;
+    /* display: none; */
+}
+
+.navMoreAbout .EducationButton{
+    color: var(--myRed);
+    font-weight: 800;
+}
+ .educationSection .imageAndText{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+ }
+ .educationSection .educationText h3 img{
+    height: 30px;
+    width: auto;
+    box-shadow: none;
+    border: none;
+    border-radius: none;
+ }
+ .educationText h3{
+    display: flex;
+    align-items: center;
+    line-height: 2rem;
+    gap: 1rem;
+}
+ .educationSection .imageAndText img{
+    height: 400px;
+    width: auto;
+    box-shadow: 0 0 20px rgb(0, 0, 0, .2);
+    border-radius: 20px;
+    border: 1.5px solid rgb(255,255,255,.18);
+ }
+ .educationSection .imageAndText h3 span{
+    font-weight: normal;
+ } 
+.educationSection .educationText{
+    flex-direction: column;
+}
+
+.skillsSection{
+    margin-top: 3rem;
+    display: none;
+    align-items: center;
+    width: 80vw;
+}
+.skillsSection ul{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);    
+}
+.skillsSection li{
+    align-items: center;
+}
+
+.progressContainer{
+    width: 100%;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #e0e0e0;
+    overflow: hidden;
+}
+.progressBar{
+    /* width: 90%; */
+    height: 20px;
+    /* background-color: #4caf50; */
+    background: linear-gradient(to right, #F28202, #FF5E5E);
+
+    border-radius: 30px;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    line-height: 20px;
+    font-weight: bold;
+    transition: width 0.5s ease-in-out;
+}
+
+.contactMeSection {
+    /* width: 80%; */
+    /* padding-left: 8rem; */
+    padding: 3rem 8.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* align-items: center; */
+    /* justify-content: center; */
+    border-top: 1px solid rgb(0, 0, 0, .3);
+    border-bottom: 1px solid rgb(0, 0, 0, .3);
+}
+.contactMeSection .logo{
+    font-weight: 600;
+}
+.contactMeSection .secondSection{
+    line-height: 2rem;
+    display: flex;
+    gap: 10rem;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.secondSection .leftSection{
+    
+    display: flex;
+    gap: 5rem;
+}
+.secondSection .leftSection h3{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.secondSection .leftSection a:hover{
+    color: var(--myRed);
+}
+
+.secondSection .rightSection h3{
+    font-weight: 600;
+    background: linear-gradient(to right, #F28202, #FF5E5E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.secondSection .rightSection, form{
+    display: flex;
+    flex-direction: column;
+}
+.secondSection .rightSection form input, textarea{
+    padding: 8px;
+    width: 15rem;
+    height: auto;
+    /* border: none; */
+    /* background-color: rgb(0, 0, 0, .05); */
+} 
+.secondSection .rightSection form input:focus, textarea:focus{
+    outline: 1px solid var(--myRed);
+    border: none;
+}
+.secondSection .rightSection form  textarea{
+    height: 8rem;
+    width: 20rem;
+    font-family: "Inter", sans-serif;
+
+}
+.secondSection .rightSection form button{
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 8rem;
+}
+.secondSection .rightSection form button:hover{
+    background: var(--myOrange);
+    transition: .3s ease-in-out;
+}
+footer{
+    padding: 20px 80px;
+}
+footer a{
+    display: flex;
+}
+/* MOBILE RESPOSIVE */
+@media (max-width: 800px)  {
+    nav ul{
+        display: none;
+    }
+    .mobileResponsive{
+        display: block;
+        flex-direction: column;
+        text-align: center;
+    }
+    .heroSection {
+        transition: .3s ease-in-out;
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    /* .heroSection .heroImage img{
+        height: 300px;
+        width: 300px;
+    } */
+    .heroText .twoButtonsHero, .heroSection .heroText .iconsDiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .indigoCircle{
+        display: none;
+    }
+    
+    .myWorkSection .designs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .educationSection .imageAndText{
+        flex-direction: column;
+
+    }
+    .imageAndText .educationText{
+        font-size: 6px;
+    }
+
+    .skillsSection ul{
+        display: grid;
+        grid-template-columns: repeat(1, 3fr);    
+    }
+
+    .contactMeSection{
+        padding: 20px;
+    }
+
+    .contactMeSection .secondSection{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3rem;
+    }
+    .myWorkSection{
+        text-align: center;
+
+    }
+    .myWorkSection .bottomSectionWork{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .myWorkSection .bottomSectionWork .leftSectionWork{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .myWorkSection .bottomSectionWork .rightSectionWork div{
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+    .myWorkSection .bottomSectionWork .rightSectionWork div img{
+        height: 150px;
+        width: auto;
+    }
+}
