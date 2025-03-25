@@ -34,9 +34,16 @@ myUiUxBtn.addEventListener("click", event =>{
     softwareDevContent.style.display = "none";
     uiUxContent.style.display = "grid";
     mySoftwareDevBtn.style.color = "#000";
+    mySoftwareDevBtn.style.transform = "scale(1.05)";
+    mySoftwareDevBtn.style.transition = ".3s ease-in-out";
+
     myUiUxBtn.style.color = "#FF5E5E";
     myUiUxBtn.style.fontWeight = "800";
     mySoftwareDevBtn.style.fontWeight = "normal";
+
+    //hover effect
+    mySoftwareDevBtn.classList.add("hoverEffect");
+    myUiUxBtn.classList.remove("hoverEffect");
 
 })
 

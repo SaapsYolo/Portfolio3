@@ -252,6 +252,11 @@ i{
     font-weight: 800;
     color: var(--myRed);
 }
+.myWorkSection .bottomSectionWork .leftSectionWork .uiUxDesign a:hover{
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+}
+
 .myWorkSection .bottomSectionWork .rightSectionWork div {
     /* background-color: #F28202; */
     display: grid;
@@ -563,5 +568,26 @@ footer a{
     .myWorkSection .bottomSectionWork .rightSectionWork div img{
         height: 150px;
         width: auto;
+    }
+}
+
+@media (max-width: 543px){
+    .heroSection .heroImage img{
+        width: 200px;
+        height: 200px;
+        margin-top: -3rem;
+        /* display: none; */
+    }
+    .heroSection .heroText h2{
+        font-size: 32px;
+    }
+    .orangeCircle{
+        display: none;
+    }
+    .circle3{
+        display: none;
+    }
+    .circle4{
+        display: none;
     }
 }
