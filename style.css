@@ -581,8 +581,16 @@ footer a{
     .heroSection .heroText h2{
         font-size: 32px;
     }
+    .indigoCircle{
+        display: block;
+        margin: 1.5rem 5.5rem;
+        height: 14rem;
+        width: 14rem;
+
+    }
     .orangeCircle{
-        display: none;
+        display: block;
+        margin: 32rem 6rem;
     }
     .circle3{
         display: none;
