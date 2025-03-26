@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">            
 </head>
 <body>
-    <nav>
+    <nav id="Navigation">
         <div class="logo">Siya.Dev</div>
         <ul>
             <li><a href="#">Home</a></li>
@@ -15,20 +15,27 @@
             <li><a href="#MyWorkSection">My Work</a></li>
             <li><a href="#SkillsAndEducation">Education & Skills</a></li>
         </ul>
-        <div class="gradientBorder">
+        <div class="gradientBorder2">
             <a href="#ContactMeSection" class="contactMeBtn">Contact Me</a>
         </div>
-
+        
         <!-- Mobile responsive -->
-        <ul class="mobileResponsive">
+        <div class="menuResponsive" id="MenuResponsiveButton">
+            <img src="Assets/icons/icons8-menu.svg" alt="">
+        </div>
+        <div class="menuResponsive" id="CloseResponsiveMenuButton">
+            <img src="Assets/icons/icons8-close.svg" alt="">
+        </div>
+        <ul  id="MobileResponsiveLinks">
+            
             <li><a href="#">Home</a></li>
             <li><a href="#MyBio">Bio</a></li>
             <li><a href="#">My Work</a></li>
             <li><a href="#SkillsAndEducation">Education & Skills</a></li>
+            <div class="gradientBorder" id="MobileResponsiveContactMe">
+                <a href="#ContactMeSection" class="contactMeBtn">Contact Me</a>
+            </div>
         </ul>
-        <div class="gradientBorder2">
-            <a href="#ContactMeSection" class="contactMeBtn">Contact Me</a>
-        </div>
     </nav>
     <div class="blurNav"></div>
     
@@ -172,7 +179,7 @@
                 <div class="imageAndText">
                     <div><img src="Assets/images/grad2.JPG"  alt=""></div>
                     <div class="educationText">
-                        <h3><img src="Assets/icons/icons8-institution-50.png" alt="">Institution: <span>Vaal University of Technology</span></h3>
+                        <h3><img src="Assets/icons/icons8-institution-50.png" alt="">Institution:  <span>Vaal University of Technology</span></h3>
                         <h3><img src="Assets/icons/icons8-certificate-50.png" alt="">Qualification: <span>Advanced Diploma in Information Technology</span></h3>
                         <h3><img src="Assets/icons/icons8-calendar-50.png" alt="">Year: <span>2024</span></h3><br><br>
                         <h3><img src="Assets/icons/icons8-institution-50.png" alt="">Institution: <span>Vaal University of Technology</span></h3>
@@ -254,7 +261,7 @@
                         <li><a href="#">My Work</a></li>
                         <li><a href="#SkillsAndEducation">Education & Skills</a></li>
                     </ul>
-        <a target="_blank" href="https://icons8.com">Icons by Icons8</a>
+                    <a target="_blank" href="https://icons8.com">Icons by Icons8</a>
 
                 </div>
                 <div class="socials">

@@ -14,10 +14,11 @@
 body{
     min-height: 100vh;
     font-family: "Inter", sans-serif ;
+    scroll-behavior: smooth;
 }
 
 nav{
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding: 10px;
     display: flex;
     align-items: center;
@@ -78,9 +79,29 @@ nav .contactMeBtn{
     padding: 12px 20px;
 }
 nav .mobileResponsive, .gradientBorder2{
-    display: none;
-
+    display: block;
+    background: linear-gradient(to right, #F28202, #FF5E5E);
+    padding: 1px;
+    display: inline-block;
 }
+.menuResponsive{
+        display: none;
+}
+nav #MenuResponsiveButton{
+    display: none;
+}
+nav #MobileResponsiveLinks{
+    display: none;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 5rem;
+    /* flex-direction: column; */
+    text-align: center;
+    line-height: 2rem;
+    ;
+    
+}
+
 .orangeCircle{
     height: 10rem;
     width: 10rem;
@@ -492,13 +513,37 @@ footer a{
 }
 /* MOBILE RESPOSIVE */
 @media (max-width: 800px)  {
+    nav{
+        flex-direction: row;
+        
+    }
     nav ul{
         display: none;
     }
-    .mobileResponsive{
+    nav .mobileResponsive, .gradientBorder2{
+        display: none;
+    }
+    #MobileResponsiveContactMe{
         display: block;
-        flex-direction: column;
-        text-align: center;
+    }
+    nav #MenuResponsiveButton, #CloseResponsiveMenuButton{
+        display: block;
+        cursor: pointer;
+    }
+    #CloseResponsiveMenuButton{
+        display: none;
+    }
+    nav #MobileResponsiveLinks {
+        display: none;
+    }
+    nav #MobileResponsiveLinks #MenuResponsiveButton{
+        display: block;
+    }
+    .menuResponsive{
+        display: block;
+    }
+    .menuResponsive img{
+        height: 30px;
     }
     .heroSection {
         transition: .3s ease-in-out;
@@ -576,6 +621,7 @@ footer a{
         width: 200px;
         height: 200px;
         margin-top: -3rem;
+        border: 1.5px solid #fff;
         /* display: none; */
     }
     .heroSection .heroText h2{
@@ -586,6 +632,7 @@ footer a{
         margin: 1.5rem 5.5rem;
         height: 14rem;
         width: 14rem;
+        background-color: rgb(75, 0, 130, .3);
 
     }
     .orangeCircle{
@@ -593,9 +640,23 @@ footer a{
         margin: 32rem 6rem;
     }
     .circle3{
-        display: none;
+        display: block;
     }
     .circle4{
         display: none;
+    }
+    .contactMeSection .secondSection .leftSection{
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .contactMeSection .secondSection .rightSection form input {
+        width: 100%;
+    }
+    .contactMeSection .secondSection .rightSection form  textarea{
+        width: 100%;
+    }
+    .contactMeSection .secondSection .rightSection form button{
+        width: 100%;
     }
 }

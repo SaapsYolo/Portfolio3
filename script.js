@@ -6,6 +6,11 @@ const myUiUxBtn = document.getElementById("UiUxBtn");
 const mySoftwareDevBtn = document.getElementById("SoftwareDevBtn");
 const uiUxContent = document.getElementById("UiUxContent");
 const softwareDevContent = document.getElementById("SoftwareDevContent");
+const menuResonsiveButton = document.getElementById("MenuResponsiveButton");
+const closeResponsiveMenuButton = document.getElementById("CloseResponsiveMenuButton");
+const nav = document.getElementById("Navigation");
+const mobileResponsiveLinks = document.getElementById("MobileResponsiveLinks");
+
 
 myEducationBtn.addEventListener("click", event =>{
     skillsContent.style.display = "none";
@@ -57,3 +62,18 @@ mySoftwareDevBtn.addEventListener("click", event =>{
 
 })
 
+
+menuResonsiveButton.addEventListener("click", event =>{
+   
+    nav.style.flexDirection = "column";
+    mobileResponsiveLinks.style.display = "contents";
+    menuResonsiveButton.style.display = "none";
+    closeResponsiveMenuButton.style.display = "contents";
+})
+
+closeResponsiveMenuButton.addEventListener("click", event =>{
+    nav.style.flexDirection = "row";
+    mobileResponsiveLinks.style.display = "none";
+    menuResonsiveButton.style.display = "block";
+    closeResponsiveMenuButton.style.display = "none";
+})
