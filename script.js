@@ -69,6 +69,8 @@ menuResonsiveButton.addEventListener("click", event =>{
     mobileResponsiveLinks.style.display = "contents";
     menuResonsiveButton.style.display = "none";
     closeResponsiveMenuButton.style.display = "contents";
+    nav.style.transition = ".3s ease-in-out";
+    nav.style.height = "100vh";
 })
 
 closeResponsiveMenuButton.addEventListener("click", event =>{
@@ -76,4 +78,6 @@ closeResponsiveMenuButton.addEventListener("click", event =>{
     mobileResponsiveLinks.style.display = "none";
     menuResonsiveButton.style.display = "block";
     closeResponsiveMenuButton.style.display = "none";
+    nav.style.transition = ".3s ease-in-out";
+    nav.style.height = "auto";
 })
