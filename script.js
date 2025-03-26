@@ -10,6 +10,11 @@ const menuResonsiveButton = document.getElementById("MenuResponsiveButton");
 const closeResponsiveMenuButton = document.getElementById("CloseResponsiveMenuButton");
 const nav = document.getElementById("Navigation");
 const mobileResponsiveLinks = document.getElementById("MobileResponsiveLinks");
+const home = document.getElementById("Home");
+const bio = document.getElementById("Bio");
+const myWork = document.getElementById("MyWork");
+const educationAndSkills = document.getElementById("EducationAndSkills");
+const mobileResponsiveContactMe = document.getElementById("MobileResponsiveContactMe");
 
 
 myEducationBtn.addEventListener("click", event =>{
@@ -74,10 +79,32 @@ menuResonsiveButton.addEventListener("click", event =>{
 })
 
 closeResponsiveMenuButton.addEventListener("click", event =>{
+   closeNavLinks();
+})
+
+home.addEventListener("click", event =>{
+    closeNavLinks();
+})
+bio.addEventListener("click", event =>{
+    closeNavLinks();
+})
+myWork.addEventListener("click", event =>{
+    closeNavLinks();
+})
+educationAndSkills.addEventListener("click", event =>{
+    closeNavLinks();
+})
+
+
+mobileResponsiveContactMe.addEventListener("click", event =>{
+    closeNavLinks();
+})
+
+function closeNavLinks(){
     nav.style.flexDirection = "row";
     mobileResponsiveLinks.style.display = "none";
     menuResonsiveButton.style.display = "block";
     closeResponsiveMenuButton.style.display = "none";
     nav.style.transition = ".3s ease-in-out";
     nav.style.height = "auto";
-})
+}
