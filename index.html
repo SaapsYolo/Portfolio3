@@ -285,15 +285,17 @@
                 <h3>
                     Send Me An Email
                 </h3>
-                <form action="send_email.php" method="POST">
+                <form action="https://formsubmit.co/siya.biyo.bongi@gmail.com" method="POST">
                     <label for="Subject">Name</label>
                     <input type="text" name="name" placeholder="John Doe">
                     <label for="Email">Email</label>
                     <input type="email" name="email" placeholder="john.doe@example.com" required>
                     <label for="Message">Message</label>
-                    <textarea name="" id="" name="message" placeholder="your message" required></textarea>
+                    <textarea  id="" name="message" placeholder="your message" required></textarea>
                     <br>
-                    <button type="submit">Send</button>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://saapsyolo.netlify.app">
+                    <button type="submit" id="SubmitButton">Send</button>
                 </form>
             </div>
         </div>

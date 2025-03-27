@@ -15,6 +15,7 @@ const bio = document.getElementById("Bio");
 const myWork = document.getElementById("MyWork");
 const educationAndSkills = document.getElementById("EducationAndSkills");
 const mobileResponsiveContactMe = document.getElementById("MobileResponsiveContactMe");
+const submitButton = document.getElementById("SubmitButton");
 
 
 myEducationBtn.addEventListener("click", event =>{
@@ -108,3 +109,8 @@ function closeNavLinks(){
     nav.style.transition = ".3s ease-in-out";
     nav.style.height = "auto";
 }
+
+submitButton.addEventListener("click", event =>{
+    alert("Thank you for your message! I will get back to you as soon as possible.")
+    document.getElementById("Name").value = "";
+})
