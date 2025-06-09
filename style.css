@@ -649,6 +649,10 @@ footer a{
         width: 14rem;
         height: 14rem;
     }
+    .contactMeSection .secondSection{
+        display: flex;
+        flex-direction: column-reverse;
+    }
     .contactMeSection .secondSection .leftSection{
         gap: 2rem;
         display: flex;
