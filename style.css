@@ -17,6 +17,59 @@ body{
     scroll-behavior: smooth;
 }
 
+#pop-up{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.pop-up-content{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0,0,0, 0.1);
+    position: relative;
+    text-align: center;
+}
+.pop-up-content h2{
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+.pop-up-content p{
+    font-size: .95rem;
+    margin: 10px 0 20px;
+}
+.close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.ok-btn{
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.ok-btn:hover{
+    background-color: #F28202;
+    transition: .3s ease-in-out;
+}
+
 nav{
     /* margin-top: 20px; */
     padding: 10px;

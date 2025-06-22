@@ -114,3 +114,10 @@ submitButton.addEventListener("click", event =>{
     alert("Thank you for your message! I will get back to you as soon as possible.")
     document.getElementById("Name").value = "";
 })
+
+function closePopUp() {
+    document.getElementById('pop-up').style.display = 'none';
+}
+window.addEventListener('load', function() {
+    document.getElementById('pop-up').style.display = 'flex';
+})
